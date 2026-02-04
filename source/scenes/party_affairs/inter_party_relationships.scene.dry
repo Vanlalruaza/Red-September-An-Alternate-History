@@ -10,12 +10,12 @@ max-visits: 12
 
 = Inter-Party Relationships
 
-The RGA cannot govern by itself yet. Because we do not have an electoral majority, we need the support of other parties.
+The <span style="color: #aa0f24;">**RGA**</span> cannot govern by itself yet. Because we do not have an electoral majority, we need the support of other parties.
 
-- @liberals: Strengthen our bonds with the Progressive Party.
-- @center: Strengthen our bonds with the various center-left parties.
-- @kpd: Strengthen our bonds with the Spartacus League.
-- @spd_alone: The RGA can stand alone for now.
+- @liberals: Strengthen our bonds with the <span style="color: #ea2cdd;">**Progressive Party**</span>.
+- @center: Strengthen our bonds with the various <span style="color: #bf353a;">**center-left parties**</span>.
+- @kpd: Strengthen our bonds with the <span style="color: #700000;">**Spartacus League**</span>.
+- @spd_alone: The <span style="color: #aa0f24;">**RGA**</span> can stand alone for now.
 - @easy_discard
 
 
