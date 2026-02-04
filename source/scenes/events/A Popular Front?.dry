@@ -1,0 +1,41 @@
+title: A Popular Front?
+subtitle: Our policy on the presidential election...
+new-page: true
+view-if: month == 2
+max-visits: 1
+on-arrival: presidential_candidate_chosen = 1
+tags: event
+
+= A Popular Front?
+
+The first presidential elections of the <span style="color: #4972af;">**DoR**</span> are to be held on 2nd September. Yes Tuesday, the founder of our party, has assured the <span style="color: #ea2cdd;">**Progressive**</span> candidate Woodlands our support against the <span style="color: #1345b1;">**Conservative**</span> candidate FlowBerryFizzler.
+
+Among the grassroots, this arrangement is starting to be referred to as the "Popular Front".
+
+However, we don't have to keep our promise and could instead field our own candidate. An electoral victory is highly unlikely, but it would grant us tremendous power. On the other hand, a <span style="color: #ea2cdd;">**Progressive**</span> victory is way more likely, and although we will have no guaranteed power, we could demand concessions from Woodlands, either now or after the election.
+
+- @woodlands
+- @woodlands_concessions
+- @own_candidate
+
+@woodlands
+title: We will support Woodlands and form a Popular Front!
+on-arrival: supported_woodlands = 1
+
+The <span style="color: #ea2cdd;">**Progressives**</span> are grateful for our support. Let's hope they will not forget this.
+
+@woodlands_concessions
+title: We will support Woodlands, but we will demand concessions.
+on-arrival: supported_woodlands_concessions = 1
+
+The <span style="color: #ea2cdd;">**Progressives**</span> did not expect our demands for concessions, and we know they are not enthusiastic about granting them.
+
+However, we were still able to extract some concessions after negotiations. This will definitely ensure us some influence.
+
+@own_candidate
+title: Forget this "Popular Front", we will field our own candidate!
+on-arrival: september_fielded_own = 1
+
+The <span style="color: #ea2cdd;">**Progressives**</span> are shocked by our intransingence! This will definitely hurt the relations between our parties. 
+
+A victory seems unlikely for now, but we still have time...
