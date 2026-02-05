@@ -24,6 +24,7 @@ on-arrival: supported_woodlands = 1
 
 The <span style="color: #ea2cdd;">**Progressives**</span> are grateful for our support. Let's hope they will not forget this.
 
+
 @woodlands_concessions
 title: We will support Woodlands, but we will demand concessions.
 on-arrival: supported_woodlands_concessions = 1
@@ -31,6 +32,7 @@ on-arrival: supported_woodlands_concessions = 1
 The <span style="color: #ea2cdd;">**Progressives**</span> did not expect our demands for concessions, and we know they are not enthusiastic about granting them.
 
 However, we were still able to extract some concessions after negotiations. This will definitely ensure us some influence.
+
 
 @own_candidate
 title: Forget this "Popular Front", we will field our own candidate!
