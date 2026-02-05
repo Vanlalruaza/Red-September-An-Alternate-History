@@ -1,5 +1,5 @@
-title: All Quiet on the Western Front
-subtitle: Censorship and violence over a movie...
+title: A Popular Front?
+subtitle: Our policy on the presidential election...
 view-if: year = 1928 and month = 2 and spd_prussia
 max-visits: 1
 tags: event
@@ -10,7 +10,7 @@ face-image: img/All_Quiet.jpg
 
 The first presidential elections of the <span style="color: #4972af;">**DoR**</span> are to be held on 2nd September. Yes Tuesday, the founder of our party, has assured the <span style="color: #ea2cdd;">**Progressive**</span> candidate Woodlands our support against the <span style="color: #1345b1;">**Conservative**</span> candidate FlowBerryFizzler.
 
-Among the grassroots, this arrangement is starting to be referred to as the "Popular Front".
+Among the grassroots, this arrangement is starting to be referred to as the "<span style="color: #ea2cdd;">**Popular**</span> <span style="color: ##aa0f24;">**Front**</span>".
 
 However, we don't have to keep our promise and could instead field our own candidate. An electoral victory is highly unlikely, but it would grant us tremendous power. On the other hand, a <span style="color: #ea2cdd;">**Progressive**</span> victory is way more likely, and although we will have no guaranteed power, we could demand concessions from Woodlands, either now or after the election.
 
@@ -19,7 +19,7 @@ However, we don't have to keep our promise and could instead field our own candi
 - @own_candidate
 
 @woodlands
-title: We will support Woodlands and form a Popular Front!
+title: We will support Woodlands and form a <span style="color: #ea2cdd;">**Popular**</span> <span style="color: ##aa0f24;">**Front**</span>!
 on-arrival: supported_woodlands = 1
 
 The <span style="color: #ea2cdd;">**Progressives**</span> are grateful for our support. Let's hope they will not forget this.
@@ -35,7 +35,7 @@ However, we were still able to extract some concessions after negotiations. This
 
 
 @own_candidate
-title: Forget this "Popular Front", we will field our own candidate!
+title: Forget this "Popular Front", we will field our own <span style="color: #aa0f24;">**RGA**</span> candidate!
 on-arrival: september_fielded_own = 1
 
 The <span style="color: #ea2cdd;">**Progressives**</span> are shocked by our intransingence! This will definitely hurt the relations between our parties. 
