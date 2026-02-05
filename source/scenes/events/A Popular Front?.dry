@@ -1,7 +1,7 @@
 title: A Popular Front?
 subtitle: Our policy on the presidential election...
 new-page: true
-view-if: (month == 2)
+view-if: (month = 2)
 max-visits: 1
 on-arrival: presidential_candidate_chosen = 1
 tags: event
