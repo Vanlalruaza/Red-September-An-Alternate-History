@@ -72,12 +72,12 @@ Chancellor: [+ chancellor +] ([+ chancellor_party +])
 Reichstag composition:
 
 # 1928: 30, 1930: 25, 1932: 22
-SPD: [+ spd_r +]%
+RGA: [+ spd_r +]%
 [? if sapd_formed and sapd_r > 0: SAPD: [+ sapd_r +]% ?]
 # 1928: 15, 1930: 15, 1932: 
 Z + BVP: [+ z_r +]%
 # 1928: 10, 1930: 13
-KPD: [+ kpd_r +]%
+SL: [+ kpd_r +]%
 # 1928: 5, 1930: 4 (as DstP)
 [+ ddp_name +]: [+ ddp_r +]%
 # 1928: 9, 1930: 5
