@@ -1,15 +1,14 @@
 title: Hermann Müller
 is-pinned-card: true 
 tags: advisor, centrist
-card-image: img/portraits/MüllerHermann.jpg
+card-image: img/portraits/Yes_Tuesday.png
 new-page: true
 view-if: muller_advisor = 1
 
-= Herman Müller
+= Yes Tuesday
 
 
-Müller is a former [? if chancellor = "Müller": and current ?] Chancellor, and is a long-time Social Democratic leader.
-
+Yes Tuesday is the founder of our party, the <span style="color: #aa0f24;">**Red Grits Alliance**</span>. She is also behind the controversial alliance with the <span style="color: #ea2cdd;">**Progressive Party**</span>, the <span style="color: #ea2cdd;">**Popular**</span> <span style="color: #aa0f24;">**Front**</span>. 
 - @coalition
 - @toleration
 - @snap_election
