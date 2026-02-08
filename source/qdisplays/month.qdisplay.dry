@@ -1,11 +1,11 @@
 
-(1..1) January
-(2..2) February
-(3..3) March
-(4..4) April
-(5..5) May
-(6..6) June
-(7..7) July
+(1..1) Monday
+(2..2) Tuesday
+(3..3) Wednesday
+(4..4) Thursday
+(5..5) Friday
+(6..6) Saturday
+(7..7) Sunday
 (8..8) August
 (9..9) September
 (10..10) October
