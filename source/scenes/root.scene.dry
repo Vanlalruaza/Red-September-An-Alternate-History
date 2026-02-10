@@ -621,14 +621,13 @@ this.state.disableSaves = true;
 go-to: 1928_main
 
 @1928_main
-audio: shuffle music/1928_1930/FruhlingsliedMendelssohn.mp3 music/1928_1930/AUF_HOHEN_BERGEN_noise_reduced.mp3 music/1928_1930/MarekWeber.mp3 music/1928_1930/BAUERNKAPELLE.mp3 music/1928_1933/DERLINDENBAUM_normalized.mp3 music/1928_1933/ZurSonne_zurFreiheit.mp3 music/1928_1933/arbeiter_marseille.mp3 music/1928_1933/Wann_wir_schreiten_Seit_an_Seit.mp3 music/1930_1933/Internationale-de_normalized.ogg music/1928_1930/LiedDerPompadour.mp3 music/1928_1933/SozialistenMarsch.mp3
-new-page: true
+audio: shuffle music/main/L'Internationale_.mp3
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
 = 1928
 
-It is a bright time for the <span style="color: #4972af;">**Democracy of Reddit**</span>. On the 26th of August, the <span style="color: #aa0f24;">**RGA**</span> was founded, finally giving the socialists
+It is a bright time for the <span style="color: #4972af;">**Democracy of Reddit**</span>. On the 26th of August, the <span style="color: #aa0f24;">**RGA**</span> was founded, finally giving the socialists of Reddit a voice.
 
-Now, the task of the RGA is to prepare for the next election. We have brokered a Popular Front with the Progressives, and the first legislative elections of the <span style="color: #4972af;">**DoR**</span> will be in late September. Perhaps the next government will have a socialist majority.
+Now, the task of the <span style="color: #aa0f24;">**RGA**</span> is to prepare for the next election. We have brokered a Popular Front with the Progressives, and the first legislative elections of the <span style="color: #4972af;">**DoR**</span> will be in late September. Perhaps the next government will have a socialist majority.
 
 
