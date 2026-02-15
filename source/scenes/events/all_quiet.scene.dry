@@ -1,6 +1,6 @@
 title: A Popular Front?
 subtitle: Our policy on the presidential election...
-view-if: year = 1928 and month = 2 and spd_prussia
+view-if: year = 8 and month = 27
 max-visits: 1
 tags: event
 new-page: true
@@ -20,14 +20,14 @@ However, we don't have to keep our promise and could instead field our own candi
 
 @woodlands
 title: We will support Woodlands and form a <span style="color: #ea2cdd;">**Popular**</span> <span style="color: #aa0f24;">**Front**</span>!
-on-arrival: supported_woodlands = 1
+on-arrival: first_popular_front = 1
 
 The <span style="color: #ea2cdd;">**Progressives**</span> are grateful for our support. Let's hope they will not forget this.
 
 
 @woodlands_concessions
 title: We will support Woodlands, but we will demand concessions.
-on-arrival: supported_woodlands_concessions = 1
+on-arrival: first_popular_front = 1
 
 The <span style="color: #ea2cdd;">**Progressives**</span> did not expect our demands for concessions, and we know they are not enthusiastic about granting them.
 
@@ -36,7 +36,7 @@ However, we were still able to extract some concessions after negotiations. This
 
 @own_candidate
 title: Forget this "<span style="color: #ea2cdd;">**Popular**</span> <span style="color: #aa0f24;">**Front**</span>", we will field our own <span style="color: #aa0f24;">**RGA**</span> candidate!
-on-arrival: september_fielded_own = 1
+on-arrival: september_rga_candidate = 1
 
 The <span style="color: #ea2cdd;">**Progressives**</span> are shocked by our intransingence! This will definitely hurt the relations between our parties. 
 
