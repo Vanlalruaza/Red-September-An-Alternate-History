@@ -1,0 +1,35 @@
+title: The United People's Front
+subtitle: The moderate left is unifying into the UPF.
+view-if: year = 9 and month = 20 and peoples_pact_formed = 1
+max-visits: 1
+on_arrival: centerleft_name = "UPF"; intellectuals_centerleft += 5; intellectuals_centerleft += 3; reformist_strength -= 10
+tags: event
+new-page: true
+
+= The United People's Front
+
+
+After days of negotiations between the three <span style="color: #bf353a;">**People's Pact**</span> titans, it was agreed that the <span style="color: #b53950;">**Red Roses People's Party**</span>, The <span style="color: #805fe2;">**Liberal Democratic Party of Reddit**</span> and the <span style="color: #f97f87;">**Kemalist Party**</span> will merge into one party, called the <span style="color: #bf353a;">**United People's Front**</span>.
+
+ This new party positions itself as a young blood alternative to the decaying <span style="color: #ea2cdd;">**Progressive Party**</span>. The party is expected to be led by Fred Memelord, the former chairman of the <span style="color: #b53950;">**Red Roses People's Party**</span>.
+
+This is bad news for us as this new <span style="color: #bf353a;">**UPF**</span> is firmly anticommunist. Perhaps we can somehow gain from this?
+
+- @attack: Attack these petit-bourgeois falsifiers!
+- @nothing: They do not concern us, we shall not respond.
+- @friendly: Try reaching out to them.
+
+@attack
+on_arrival: workers_centerleft -= 2; reformist_dissent += 10; centerleft_relation -= 15
+
+Attacking the <span style="color: #bf353a;">**UPF**</span> can decrease their growth, but it will definitely worsen relations with them and may even sway the UPF and moderate workers further to the right. Our reformists are displeased.
+
+@nothing
+on_arrival: workers_centerleft += 2; centerleft_relation -= 5
+
+We shall neither reach out to nor attack the <span style="color: #bf353a;">**UPF**</span>. How our relations with them will develop remains to be seen, although the <span style="color: #bf353a;">**UPF**</span>'s anticommunist rhetoric will definitely make friendly relations difficult to reach.
+
+@friendly
+
+We reach out to the <span style="color: #bf353a;">**UPF**</span> in good will. Some connections are made. Perhaps this is the beginning of an inter-socialist friendship.
+
