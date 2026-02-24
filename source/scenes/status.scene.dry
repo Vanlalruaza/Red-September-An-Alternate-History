@@ -98,7 +98,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="The Reformists seek to achieve socialism by electoralism and reform, rejecting more radical methods. They are represented by the Rose Caucus.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
 
-{!<span class="tooltip-text" title="The Liberal Socialists and Classical Radicals of the party believe in a syncretism of liberal and socialist values. They support the extension of democracy and social reforms.">Liberal</span>!} strength: [+ radlib_strength : strength +], dissent: [+ radlib_dissent : dissent +] ?]
+{!<span class="tooltip-text" title="The Liberal Socialists and Classical Radicals of the party believe in a syncretism of liberal and socialist values. They support the extension of democracy and social reforms.">Liberal</span>!} strength: [+ radlib_strength : strength +], dissent: [+ radlib_dissent : dissent +]
 
 
 @paramilitaries
