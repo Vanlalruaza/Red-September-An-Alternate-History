@@ -2,7 +2,7 @@ title: The United People's Front
 subtitle: The moderate left is unifying into the UPF.
 view-if: year = 9 and month = 20 and peoples_pact_formed = 1
 max-visits: 1
-on_arrival: centerleft_name = "UPF"; intellectuals_centerleft += 5; intellectuals_centerleft += 3; reformist_strength -= 10
+on_arrival: centerleft_name = "UPF"; intellectuals_centerleft += 5; intellectuals_centerleft += 3; reformist_strength -= 10; centerleft_relation -= 20
 tags: event
 new-page: true
 
@@ -30,6 +30,7 @@ on_arrival: workers_centerleft += 2; centerleft_relation -= 5
 We shall neither reach out to nor attack the <span style="color: #bf353a;">**UPF**</span>. How our relations with them will develop remains to be seen, although the <span style="color: #bf353a;">**UPF**</span>'s anticommunist rhetoric will definitely make friendly relations difficult to reach.
 
 @friendly
+on_arrival: workers_centerleft += 2; centerleft_relation += 35
 
 We reach out to the <span style="color: #bf353a;">**UPF**</span> in good will. Some connections are made. Perhaps this is the beginning of an inter-socialist friendship.
 
