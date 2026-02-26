@@ -46,12 +46,14 @@ Q.dissent = 0.05;
 Q.dissent_percent = 5;
 
 // factions
-Q.factions = ['communist', 'marxist', 'pansocialist', 'reformist', 'radlib'];
+Q.factions = ['communist', 'marxist', 'anarchist', 'pansocialist', 'reformist', 'radlib'];
 // should this be normalized to 100%?
 Q.communist_strength = 5;
 Q.communist_dissent = 5;
-Q.marxist_strength = 5;
+Q.marxist_strength = 10;
 Q.marxist_dissent = 0;
+Q.anarchist.strength = 10
+Q.anarchist_dissent = 0
 Q.pansocialist_strength = 30;
 Q.pansocialist_dissent = 0;
 Q.reformist_strength = 15;
@@ -62,6 +64,7 @@ Q.radlib_dissent = 0;
 // secret events...
 Q.pansocialist_split = 0;
 Q.marxist_split = 0;
+Q.anarchist.split = 0
 Q.communist_split = 0;
 Q.reformist_split = 0;
 Q.radlib_split = 0;
@@ -108,7 +111,7 @@ Q.farright_relation = 0;
 
 Q.farleft_leader = "Blobii";
 // alternative is the Conciliators as party leader
-Q.kpd_party_leader = "Blobii";
+Q.farleft_party_leader = "Blobii";
 Q.progressive_leader = "Woodlands";
 // party leader - can be Ludwig Kaas, Joseph Joos, or Adam Stegerwald after the 1928 December conference. Joos will be most friendly to the SPD.
 Q.progressive_party_leader = "Woodlands";
@@ -129,18 +132,18 @@ Q.prussian_government = "SPD";
 // The array of forces - paramilitary groups
 // Number of members in 1928 (in thousands)
 // Reichsbanner, stahlhelm, SA, rotfrontkämpferbund
-Q.rga_media_strength = 2000;
-Q.rga_media_militancy = 0.01;
-Q.rga_media_banned = 0;
-Q.conservative_media_strength = 500;
-Q.conservative_media_militancy = 0.5;
-Q.conservative_media_banned = 0;
-Q.farright_media_strength = 80;
-Q.far_right_media_militancy = 0.5;
-Q.far_right_media_banned = 0;
-Q.far_left_media_strength = 130;
-Q.far_left_media_militancy = 0.5;
-Q.far_left_media_banned = 0;
+Q.rga_org_strength = 2000;
+Q.rga_org_militancy = 0.01;
+Q.rga_org_banned = 0;
+Q.conservative_org_strength = 500;
+Q.conservative_org_militancy = 0.5;
+Q.conservative_org_banned = 0;
+Q.far_right_org_strength = 100;
+Q.far_right_org_militancy = 0.5;
+Q.far_right_org_banned = 0;
+Q.far_left_org_strength = 130;
+Q.far_left_org_militancy = 0.5;
+Q.far_left_org_banned = 0;
 
 Q.interior_police_strength = 20;
 Q.interior_police_militancy = 1;
@@ -314,7 +317,10 @@ Q.sapd_r = 0;
 Q.old_sapd_r = 0;
 
 // for changing the DDP's name to the DStP
-Q.ddp_name = "various center-lefts";
+Q.centerleft_name = "Center Left";
+Q.farleft_name = "Far Left";
+Q.farright_name = "Far Right";
+Q.conservative_name = "CP";
 
 // array of objects of the form {date: Date(), spd: 10, kpd: 12, ...} for each election
 Q.election_records = [];
@@ -618,11 +624,11 @@ go-to: 1928_main
 
 @1928_main
 set-bg: dor_map.jpg
-audio: shuffle music/main/L'Internationale_.mp3 music/main/Socialism_is_Love.mp3
+audio: shuffle out/html/music/main/ L'Internationale_.mp3 out/html/music/main/Socialism_is_Love.mp3
 new-page: true
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
-= 1928
+= August
 
 It is a bright time for the <span style="color: #4972af;">**Democracy of Reddit**</span>. On the 26th of August, the <span style="color: #aa0f24;">**RGA**</span> was founded, finally giving the socialists of Reddit a voice.
 
