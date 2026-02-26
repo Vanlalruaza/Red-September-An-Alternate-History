@@ -15,6 +15,17 @@ max-cards: 3
 #Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
 
 [? if year = 1928 and month = 2 : Hour Employment of the <span style="color: #1345b1;">**Conservative Party**</span> steps down as president, appointing Flow Berry Fizzler to the position in his stead. This move is somewhat controversial, as it is debated if the president is allowed to simply choose his replacement. ?]
+[? if year = 8 and month = 28 : The <span style="color: #e0a238;">**Monarchist League**</span> is founded, seeking to replace the president with a monarch. ?]
+[? if year = 8 and month = 29 : The <span style="color: #10137c;">**LIFE PACT**</span> is founded. They support direct democracy. ?]
+[? if year = 9 and month = 1 : Hour-Employment-740 breaks from the <span style="color: #1345b1;">**Conservative Party**</span> after FlowBerryFizzler made a remark about banning parties, founding <span style="color: #efea45;">**the Eternal Freedom and Democracy Party**</span>.
+[? if year = 9 and month = 1 : The <span style="color: #805fe2;">**Liberal Democratic Party of Reddit**</span>, espousing social libertarian and progressive policies, is founded. This marks the entrance of the <span style="color: #bf353a;">**center-left**</span> into party politics.
+[? if year = 9 and month = 3 and conservative_disbanded = 1 : The <span style="color: #1345b1;">**Conservative Party**</span> is refounded. ?]
+[? if year = 9 and month = 3 : The <span style="color: #6b6b6b;">**United Nostalgia Coalition**</span> is founded, appealing to the older people of the <span style="color: #4972af;">**DoR**</span>. They are advocating "gerontocracy", the rule of the old people. ?]
+[? if year = 9 and month = 4 : The Liberal Democratic Party renames itself to the <span style="color: #805fe2;">**Liberal Democratic-Progressives of Reddit**</span>. ?]
+[? if year = 9 and month = 4 : The <span style="color: #fcfa88;">**Progressive-Liberal Party**</span> is disbanded
+[? if year = 9 and month = 4 : The <span style="color: #869ccc;">**Blue Dogs of Reddit Party**</span>, representing the moderate center, is founded by Flow Berry Fizzler. ?]
+[? if year = 9 and month = 4 : The <span style="color: #773e3f;">**Red Purity Front**</span> is founded. It claims inheritance from the <span style="color: #350c0d;">**LynkedUp movement**</span>. ?]
+[? if year = 9 and month = 4 : The <span style="color: #413a56;">**National Unity Party**</span>, a right-wing anticommunist party with authoritarian leanings, is founded. Thus, our party now has a declared enemy. It remains to be seen how this will develop... ?]
 
 - @party
 - @govt
