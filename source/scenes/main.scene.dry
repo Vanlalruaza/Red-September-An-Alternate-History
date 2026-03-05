@@ -20,9 +20,9 @@ max-cards: 3
 
 [? if year = 8 and month = 29 : The <span style="color: #10137c;">**LIFE PACT**</span> is founded. They support direct democracy. ?]
 
-[? if year = 9 and month = 1 : Hour-Employment-740 breaks from the <span style="color: #1345b1;">**Conservative Party**</span> after FlowBerryFizzler made a remark about banning parties, founding <span style="color: #efea45;">**the Eternal Freedom and Democracy Party**</span>.
+[? if year = 9 and month = 1 : Hour-Employment-740 breaks from the <span style="color: #1345b1;">**Conservative Party**</span> after FlowBerryFizzler made a remark about banning parties, founding <span style="color: #efea45;">**the Eternal Freedom and Democracy Party**</span>. ?]
 
-[? if year = 9 and month = 1 : The <span style="color: #805fe2;">**Liberal Democratic Party of Reddit**</span>, espousing social libertarian and progressive policies, is founded. This marks the entrance of the <span style="color: #bf353a;">**center-left**</span> into party politics.
+[? if year = 9 and month = 1 : The <span style="color: #805fe2;">**Liberal Democratic Party of Reddit**</span>, espousing social libertarian and progressive policies, is founded. This marks the entrance of the <span style="color: #bf353a;">**center-left**</span> into party politics. ?]
 
 [? if year = 9 and month = 3 and conservative_disbanded = 1 : The <span style="color: #1345b1;">**Conservative Party**</span> is refounded. ?]
 
@@ -30,7 +30,7 @@ max-cards: 3
 
 [? if year = 9 and month = 4 : The Liberal Democratic Party renames itself to the <span style="color: #805fe2;">**Liberal Democratic-Progressives of Reddit**</span>. ?]
 
-[? if year = 9 and month = 4 : The <span style="color: #fcfa88;">**Progressive-Liberal Party**</span> is disbanded
+[? if year = 9 and month = 4 : The <span style="color: #fcfa88;">**Progressive-Liberal Party**</span> is disbanded ?]
 
 [? if year = 9 and month = 4 : The <span style="color: #869ccc;">**Blue Dogs of Reddit Party**</span>, representing the moderate center, is founded by Flow Berry Fizzler. ?]
 
@@ -65,9 +65,9 @@ max-cards: 4
 
 [? if year = 8 and month = 29 : The <span style="color: #10137c;">**LIFE PACT**</span> is founded. They support direct democracy. ?]
 
-[? if year = 9 and month = 1 : Hour-Employment-740 breaks from the <span style="color: #1345b1;">**Conservative Party**</span> after FlowBerryFizzler made a remark about banning parties, founding <span style="color: #efea45;">**the Eternal Freedom and Democracy Party**</span>.
+[? if year = 9 and month = 1 : Hour-Employment-740 breaks from the <span style="color: #1345b1;">**Conservative Party**</span> after FlowBerryFizzler made a remark about banning parties, founding <span style="color: #efea45;">**the Eternal Freedom and Democracy Party**</span>. ?]
 
-[? if year = 9 and month = 1 : The <span style="color: #805fe2;">**Liberal Democratic Party of Reddit**</span>, espousing social libertarian and progressive policies, is founded. This marks the entrance of the <span style="color: #bf353a;">**center-left**</span> into party politics.
+[? if year = 9 and month = 1 : The <span style="color: #805fe2;">**Liberal Democratic Party of Reddit**</span>, espousing social libertarian and progressive policies, is founded. This marks the entrance of the <span style="color: #bf353a;">**center-left**</span> into party politics. ?]
 
 [? if year = 9 and month = 3 and conservative_disbanded = 1 : The <span style="color: #1345b1;">**Conservative Party**</span> is refounded. ?]
 
