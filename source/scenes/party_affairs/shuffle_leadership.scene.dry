@@ -51,14 +51,14 @@ go-to: rm_main
 
 Wels has been removed as an advisor. The Centrist faction disapproves.
 
-@remove_muller
+@remove_tuesday
 title: Remove Müller
-view-if: muller_advisor = 1
+view-if: tuesday_advisor = 1
 tags: remove_advisor
-on-arrival: muller_advisor = 0; center_dissent += 5; n_advisors -= 1
+on-arrival: tuesday_advisor = 0; radlib_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Müller has been removed as an advisor. The Centrist faction disapproves.
+Tuesday has been removed as an advisor. The Liberal faction disapproves.
 
 
 @remove_breitscheid
@@ -353,17 +353,17 @@ go-to: advisor_menu
 
 Otto Wels is now an advisor.
 
-@add_muller
-title: Hermann Müller
-subtitle: Hermann Müller is the last Social Democratic Chancellor. {!<br><br>!}[? if difficulty < 0 : Actions - Negotiating with the Coalition, Defending Toleration ?]
+@add_tuesday
+title: Yes Tuesday
+subtitle: Yes Tuesday is the founder of our party. {!<br><br>!}[? if difficulty < 0 : Actions - Negotiating with the Coalition, Defending Toleration ?]
 is-card: true
 card-image: img/portraits/MüllerHermann.jpg
 tags: center_advisor
-view-if: muller_advisor = 0 and muller_dead = 0 and n_advisors < 3 and centrists_resign = 0
+view-if: tuesday_advisor = 0 and tuesday_dead = 0 and n_advisors < 3 and centrists_resign = 0
 on-arrival: muller_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 
-Hermann Müller is now an advisor.
+Yes Tuesday is now an advisor.
 
 @add_breitscheid
 title: Rudolf Breitscheid
