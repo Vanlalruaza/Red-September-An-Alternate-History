@@ -75,7 +75,7 @@ max-cards: 4
 
 [? if year = 9 and month = 4 : The Liberal Democratic Party renames itself to the <span style="color: #805fe2;">**Liberal Democratic-Progressives of Reddit**</span>. ?]
 
-[? if year = 9 and month = 4 : The <span style="color: #fcfa88;">**Progressive-Liberal Party**</span> is disbanded
+[? if year = 9 and month = 4 : The <span style="color: #fcfa88;">**Progressive-Liberal Party**</span> is disbanded ?]
 
 [? if year = 9 and month = 4 : The <span style="color: #869ccc;">**Blue Dogs of Reddit Party**</span>, representing the moderate center, is founded by Flow Berry Fizzler. ?]
 
