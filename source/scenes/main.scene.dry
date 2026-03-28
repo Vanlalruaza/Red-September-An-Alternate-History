@@ -1,5 +1,5 @@
 title: Next day
-set-bg: img/dor_.jpg
+set-bg: img/dor.jpg
 is-hand: true
 on-arrival: {!
 if (Q.advisor_action_timer <= 0) {
