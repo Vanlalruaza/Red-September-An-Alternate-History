@@ -149,9 +149,9 @@ Q.interior_police_strength = 20;
 Q.interior_police_militancy = 1;
 Q.interior_police_loyalty = 0.45;
 
-Q.prussian_police_strength = 90;
-Q.prussian_police_militancy = 1;
-Q.prussian_police_loyalty = 0.5;
+Q.regional_police_strength = 90;
+Q.regional_police_militancy = 1;
+Q.regional_police_loyalty = 0.5;
 
 // strength includes actual military and de facto reserves?
 Q.military_strength = 15;
@@ -320,7 +320,8 @@ Q.old_sapd_r = 0;
 Q.centerleft_name = "Center Left";
 Q.farleft_name = "Far Left";
 Q.farright_name = "Far Right";
-Q.conservative_name = "CP";
+Q.conservative_name = "CPR";
+Q.rga_name = "RGA";
 
 // array of objects of the form {date: Date(), spd: 10, kpd: 12, ...} for each election
 Q.election_records = [];
@@ -463,7 +464,7 @@ Q.timers = ['advisor_action', 'confronting_nazis', 'crisis_program',
             'fundraising', 'ideology',
             'inter_party_relationships', 'international_relations',
             'iron_front', 'media', 'enemies',
-            'party_organizations', 'rally', 'militant_media',
+            'party_organizations', 'rally', 'militant_org',
             'shuffle_leadership', 'streetfighting', 'peoples_party',
             'party_disunity',
             // govt
