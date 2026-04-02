@@ -25,7 +25,7 @@ RGA position: [? if rga_toleration : toleration ?][? if rga_in_government : in g
 
 [? if rga_in_government and not in_rga_majority and not in_left_front : Right coalition dissent: [+ right_coalition_dissent : right_coalition_dissent +] ?]
 
-[? if spd_in_government and (in_left_front or in_popular_front): Left coalition dissent: [+ left_coalition_dissent : right_coalition_dissent +] ?]
+[? if rga_in_government and (in_left_front or in_popular_front): Left coalition dissent: [+ left_coalition_dissent : right_coalition_dissent +] ?]
 
 Internal dissent: [+ dissent_percent : dissent +]
 
@@ -94,7 +94,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="The Marxists are not as radical as the communists, but they too see socialism through a Marxist lense. They are represented by the Workers' Caucus.">Marxist</span>!} strength: [+ marxist_strength : strength +], dissent: [+ marxist_dissent : dissent +]
 
-{!<span class="tooltip-text" title="The Anarchists and Libertarians seek to achieve a stateless society in the DoR. Uniquely, they support participating in elections.">Anarchist</span>!} strength: [anarchist_strength : strength +], dissent: [+ anarchist_dissent : dissent +]
+{!<span class="tooltip-text" title="The Anarchists and Libertarians seek to achieve a stateless society in the DoR. Uniquely, they support participation in elections.">Anarchist</span>!} strength: [+ anarchist_strength : strength +], dissent: [+ anarchist_dissent : dissent +]
 
 {!<span class="tooltip-text" title="The Pan Socialists are the glue of the party. They seek unity within the RGA, as well as cooperation with other left-wing parties.">Pan Socialist</span>!} strength: [+ pansocialist_strength : strength +], dissent: [+ pansocialist_dissent : dissent +]
 
