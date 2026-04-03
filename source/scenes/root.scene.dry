@@ -334,8 +334,8 @@ Q.economic_records = [];
 // State of the government
 Q.president = "Hour Employment";
 // starting chancellor: Wilhelm Marx
-Q.chancellor = "Conservative";
-Q.chancellor_party = 'none';
+Q.chancellor = "none";
+Q.chancellor_party = 'Conservative';
 Q.rga_in_government = 0;
 Q.progressive_in_government = 0;
 Q.centerleft_in_government = 0;
