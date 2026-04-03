@@ -41,7 +41,7 @@ Reichstag composition:
 {!<span class="tooltip-text" title="Red Grits Alliance">RGA</span>!}: [+ rga_r +]%
 [? if sapd_formed and sapd_r > 0: SAPD: [+ sapd_r +]% ?]
 # 1928: 15, 1930: 15, 1932: 
-{!<span class="tooltip-text" title="Progressive Party of Reddit">PP</span>!}: [+ progressive_r +]%
+{!<span class="tooltip-text" title="Progressive Party of Reddit">PPR</span>!}: [+ progressive_r +]%
 # 1928: 10, 1930: 13
 {!<span class="tooltip-text" title="Various far-lefts">Far Left</span>!}: [+ farleft_r +]%
 # 1928: 5, 1930: 4 (as DstP)
@@ -49,7 +49,7 @@ Reichstag composition:
 # 1928: 9, 1930: 5
 {!<span class="tooltip-text" title="Progressive-Liberal Party of Reddit">PLP</span>!}: [+ proglib_r +]%
 # 1928: 14, 1930: 7
-{!<span class="tooltip-text" title="Conservative Party of Reddit">CP</span>!}: [+ conservative_r +]%
+{!<span class="tooltip-text" title="Conservative Party of Reddit">CPR</span>!}: [+ conservative_r +]%
 # 1928: 3, 1930: 18
 {!<span class="tooltip-text" title="Various far rights">Far Right</span>!}: [+ farright_r +]%
 # 1928: 9, 1930: 10
@@ -76,7 +76,7 @@ Economic growth: [+ economic_growth_2 +]%
 = Inter-party Relations
 
 
-{!<span class="tooltip-text" title="Progressive Party of Reddit">PP</span>!}: [+ progressive_relation : relationships +]
+{!<span class="tooltip-text" title="Progressive Party of Reddit">PPR</span>!}: [+ progressive_relation : relationships +]
 
 {!<span class="tooltip-text" title="Various center lefts">!}[? if not centerleft_name: DDP?][? if centerleft_name != 0 : [+ centerleft_name +]?]{!</span>!}: [+ centerleft_relation : relationships +]
 
@@ -84,7 +84,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="Various far lefts">Far Left</span>!}: [+ sl_relation : relationships +]
 
-{!<span class="tooltip-text" title="Conservative Party of Reddit">CP</span>!}: [+ conservative_relation : relationships +]
+{!<span class="tooltip-text" title="Conservative Party of Reddit">CPR</span>!}: [+ conservative_relation : relationships +]
 
 {!<span class="tooltip-text" title="Various far rights">Far Right</span>!}: [+ farright_relation : relationships +]
 
@@ -164,7 +164,7 @@ RGA: [+ rga_votes +]%
 
 [? if sapd_formed: SAPD: [+ sapd_votes +]% ?]
 
-PP: [+ progressive_votes +]%
+PPR: [+ progressive_votes +]%
 
 Far Left: [+ farleft_votes +]%
 
@@ -172,7 +172,7 @@ Far Left: [+ farleft_votes +]%
 
 PLP: [+ proglib_votes +]%
 
-CP: [+ conservative_votes +]%
+CPR: [+ conservative_votes +]%
 
 Far Right: [+ farright_votes +]%
 
@@ -180,11 +180,11 @@ Others: [+ other_votes +]%
 
 **Detailed results for each demographic**
 
-Workers: RGA: [+ workers_rga_display +]%, PP: [+ workers_progressive_display +]%, Far Left: [+ workers_farleft_display +]%, [? if not centerleft_name: DDP?][? if centerleft_name != 0 : [+ centerleft_name +]?]: [+ workers_centerleft_display +]%, PLP: [+ workers_proglib_display +]%; CP: [+ workers_conservative_display +]%, Far Right: [+ workers_farright_display +]%, Others: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
+Workers: RGA: [+ workers_rga_display +]%, PPR: [+ workers_progressive_display +]%, Far Left: [+ workers_farleft_display +]%, [? if not centerleft_name: DDP?][? if centerleft_name != 0 : [+ centerleft_name +]?]: [+ workers_centerleft_display +]%, PLP: [+ workers_proglib_display +]%; CPR: [+ workers_conservative_display +]%, Far Right: [+ workers_farright_display +]%, Others: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
 
-Intellectuals: RGA: [+ intellectuals_rga_display +]%, PP: [+ intellectuals_progressive_display +]%, Far Left: [+ intellectuals_farleft_display +]%, [? if not centerleft_name: DDP?][? if centerleft_name != 0 : [+ centerleft_name +]?]: [+ intellectuals_centerleft_display +]%, PLP: [+ intellectuals_proglib_display +]%; CP: [+ intellectuals_conservative_display +]%, Far Right: [+ intellectuals_farright_display +]%, Others: [+ intellectuals_other_display +]% [? if sapd_formed: SAPD: [+ new_middle_sapd_display +]% ?]
+Intellectuals: RGA: [+ intellectuals_rga_display +]%, PPR: [+ intellectuals_progressive_display +]%, Far Left: [+ intellectuals_farleft_display +]%, [? if not centerleft_name: DDP?][? if centerleft_name != 0 : [+ centerleft_name +]?]: [+ intellectuals_centerleft_display +]%, PLP: [+ intellectuals_proglib_display +]%; CPR: [+ intellectuals_conservative_display +]%, Far Right: [+ intellectuals_farright_display +]%, Others: [+ intellectuals_other_display +]% [? if sapd_formed: SAPD: [+ new_middle_sapd_display +]% ?]
 
-Bourgeoisie: RGA: [+ bourgeoisie_rga_display +]%, PP: [+ bourgeoisie_progressive_display +]%, Far Left: [+ bourgeoisie_farleft_display +]%, [? if not centerleft_name: DDP?][? if centerleft_name != 0 : [+ centerleft_name +]?]: [+ bourgeoisie_centerleft_display +]%, PLP: [+ bourgeoisie_proglib_display +]%; CP: [+ bourgeoisie_conservative_display +]%, Far Right: [+ bourgeoisie_farright_display +]%, Others: [+ bourgeoisie_other_display +]% [? if sapd_formed: SAPD: [+ old_middle_sapd_display +]% ?]
+Bourgeoisie: RGA: [+ bourgeoisie_rga_display +]%, PPR: [+ bourgeoisie_progressive_display +]%, Far Left: [+ bourgeoisie_farleft_display +]%, [? if not centerleft_name: DDP?][? if centerleft_name != 0 : [+ centerleft_name +]?]: [+ bourgeoisie_centerleft_display +]%, PLP: [+ bourgeoisie_proglib_display +]%; CPR: [+ bourgeoisie_conservative_display +]%, Far Right: [+ bourgeoisie_farright_display +]%, Others: [+ bourgeoisie_other_display +]% [? if sapd_formed: SAPD: [+ old_middle_sapd_display +]% ?]
 
 Rural: RGA: [+ rural_rga_display +]%, PP: [+ rural_progressive_display +]%, Far Left: [+ rural_farleft_display +]%, [? if not centerleft_name: DDP?][? if centerleft_name != 0 : [+ centerleft_name +]?]: [+ rural_centerleft_display +]%, PLP: [+ rural_proglib_display +]%; CP: [+ rural_conservative_display +]%, Far Right: [+ rural_farright_display +]%, Others: [+ rural_other_display +]% [? if sapd_formed: SAPD: [+ rural_sapd_display +]% ?]
 
