@@ -188,7 +188,7 @@ Catholics: SPD: [+ catholics_spd_display +]%, Z: [+ catholics_z_display +]%, KPD
 @parties
 go-to: menu
 
-<span style="color: #aa0f24;">**RGA**</span> - <span style="color: #aa0f24;">*Red Grits Alliance*</span> - this is us. We are a socialist and democratic party of the working class. We are the foremost defenders of Reddit socialism. The modern SPD was founded by Yes Tuesday, a liberal socialist, as a broad pan-socialist party.
+<span style="color: #aa0f24;">**RGA**</span> - <span style="color: #aa0f24;">*Red Grits Alliance*</span> - this is us. We are a socialist and democratic party of the working class. We are the foremost defenders of Reddit socialism. The modern RGA was founded by Yes Tuesday, a liberal socialist, as a broad pan-socialist party.
 
 **<span style="color: #ea2cdd;">**PP**</span>** - <span style="color: #ea2cdd;">*Progressive Party*</span> - a centrist to center-left party supported by many progressives and social democrats. For the September presidential election, we agreed on a <span style="color: #ea2cdd;">**Popular**</span> <span style="color: #aa0f24;">**Front**</span> with them, to defeat the <span style="color: #1345b1;">**Conservative**</span> candidate . [? if year >= 1930 or chancellor = "Brüning" : They have appeared to take a more conservative turn recently, with the rise of Brüning and the party leader, Ludwig Kaas. ?]
 
