@@ -20,12 +20,12 @@ if (Q.economic_growth) {
 
 Resources available: [+ resources +]
 
-RGA position: [? if rga_toleration : toleration ?][? if rga_in_government : in government - ?][? if rga_toleration == 0 and rga_in_government == 0 and rga_caretaker == 0 : opposition ?][? if rga_caretaker : caretaker government ?]
-[? if in_progressive_coalition and rga_in_government: Progressive Coalition ?][? if in_grand_coalition and rga_in_government: Grand Coalition ?][? if in_popular_front and rga_in_government: Broad Popular Front ?][? if in_left_front and rga_in_government: Left Popular Front ?][? if in_rga_majority and rga_in_government: RGA majority ?][? if in_minority_government and rga_in_government: minority government ?][? if in_emergency_government and rga_in_government: emergency government ?]
+SPD position: [? if spd_toleration : toleration ?][? if spd_in_government : in government - ?][? if spd_toleration == 0 and spd_in_government == 0 and spd_caretaker == 0 : opposition ?][? if spd_caretaker : caretaker government ?]
+[? if in_weimar_coalition and spd_in_government: Weimar Coalition ?][? if in_grand_coalition and spd_in_government: Grand Coalition ?][? if in_popular_front and spd_in_government: Popular Front ?][? if in_left_front and spd_in_government: Left Front ?][? if in_spd_majority and spd_in_government: SPD majority ?][? if in_minority_government and spd_in_government: minority government ?][? if in_emergency_government and spd_in_government: emergency government ?]
 
-[? if rga_in_government and not in_rga_majority and not in_left_front : Right coalition dissent: [+ right_coalition_dissent : right_coalition_dissent +] ?]
+[? if spd_in_government and not in_spd_majority and not in_left_front : Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
 
-[? if rga_in_government and (in_left_front or in_popular_front): Left coalition dissent: [+ left_coalition_dissent : right_coalition_dissent +] ?]
+[? if spd_in_government and (in_left_front or in_popular_front): KPD coalition dissent: [+ kpd_coalition_dissent : coalition_dissent +] ?]
 
 Internal dissent: [+ dissent_percent : dissent +]
 
@@ -38,20 +38,20 @@ Chancellor: [+ chancellor +] ([+ chancellor_party +])
 Reichstag composition:
 
 # 1928: 30, 1930: 25, 1932: 22
-{!<span class="tooltip-text" title="Social Democratic Party of Germany">SPD</span>!}: [+ spd_r +]%
+{!<span class="tooltip-text" title="Red Grits Alliance">RGA</span>!}: [+ rga_r +]%
 [? if sapd_formed and sapd_r > 0: SAPD: [+ sapd_r +]% ?]
 # 1928: 15, 1930: 15, 1932: 
-{!<span class="tooltip-text" title="Center Party + Bavarian People's Party">Z + BVP</span>!}: [+ z_r +]%
+{!<span class="tooltip-text" title="Progressive Party of Reddit">PPR</span>!}: [+ progressive_r +]%
 # 1928: 10, 1930: 13
-{!<span class="tooltip-text" title="Communist Party of Germany">KPD</span>!}: [+ kpd_r +]%
+{!<span class="tooltip-text" title="Various far-lefts">Far Left</span>!}: [+ farleft_r +]%
 # 1928: 5, 1930: 4 (as DstP)
-{!<span class="tooltip-text" title="German Democratic Party">!}[? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]{!</span>!}: [+ ddp_r +]%
+{!<span class="tooltip-text" title="Various center_lefts">!}[? if not centerleft_name: DDP?][? if centerleft_name != 0 : [+ centerleft_name +]?]{!</span>!}: [+ centerleft_r +]%
 # 1928: 9, 1930: 5
-{!<span class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_r +]%
+{!<span class="tooltip-text" title="Progressive-Liberal Party of Reddit">PLP</span>!}: [+ proglib_r +]%
 # 1928: 14, 1930: 7
-{!<span class="tooltip-text" title="German National People's Party">DNVP</span>!}: [+ dnvp_r +]%
+{!<span class="tooltip-text" title="Conservative Party of Reddit">CPR</span>!}: [+ conservative_r +]%
 # 1928: 3, 1930: 18
-{!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">NSDAP</span>!}: [+ nsdap_r +]%
+{!<span class="tooltip-text" title="Various far rights">Far Right</span>!}: [+ farright_r +]%
 # 1928: 9, 1930: 10
 Others: [+ other_r +]%
 
