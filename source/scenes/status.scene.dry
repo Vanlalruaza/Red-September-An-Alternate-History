@@ -88,18 +88,19 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="Various far rights">Far Right</span>!}: [+ farright_relation : relationships +]
 
-= Internal Factions of the SPD
+= Internal Factions of the RGA
 
-{!<span class="tooltip-text" title="The Left is interested in radical, transformative policies and cooperation with the KPD.">Left</span>!} strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
+{!<span class="tooltip-text" title="The Communists, the left of the party, advocate radical change and revolution to achieve a communist society.">Communist</span>!} strength: [+ communist_strength : strength +], dissent: [+ communist_dissent : dissent +]
 
-{!<span class="tooltip-text" title="The Center is a faction of Center Marxists, between reform and revolution.">Center</span>!} strength: [+ center_strength : strength +], dissent: [+ center_dissent : dissent +]
+{!<span class="tooltip-text" title="The Marxists are not as radical as the communists, but they too see socialism through a Marxist lense. They are represented by the Workers' Caucus.">Marxist</span>!} strength: [+ marxist_strength : strength +], dissent: [+ marxist_dissent : dissent +]
 
-{!<span class="tooltip-text" title="Labor's goal is economic reform and benefits for organized workers.">Labor</span>!} strength: [+ labor_strength : strength +], dissent: [+ labor_dissent : dissent +]
+{!<span class="tooltip-text" title="The Anarchists and Libertarians seek to achieve a stateless society in the DoR. Uniquely, they support participation in elections.">Anarchist</span>!} strength: [+ anarchist_strength : strength +], dissent: [+ anarchist_dissent : dissent +]
 
-{!<span class="tooltip-text" title="Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
+{!<span class="tooltip-text" title="The Pan Socialists are the glue of the party. They seek unity within the RGA, as well as cooperation with other left-wing parties.">Pan Socialist</span>!} strength: [+ pansocialist_strength : strength +], dissent: [+ pansocialist_dissent : dissent +]
 
-[? if neorevisionism > 0 : Neorevisionist strength: [+ neorevisionist_strength : strength +], dissent: [+ neorevisionist_dissent : dissent +] ?]
+{!<span class="tooltip-text" title="The Reformists seek to achieve socialism by electoralism and reform, rejecting more radical methods. They are represented by the Rose Caucus.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
 
+{!<span class="tooltip-text" title="The Liberal Socialists and Classical Radicals of the party believe in a syncretism of liberal and socialist values. They support the extension of democracy and social reforms.">Liberal</span>!} strength: [+ radlib_strength : strength +], dissent: [+ radlib_dissent : dissent +]
 
 @paramilitaries
 on-arrival: {!
@@ -117,33 +118,35 @@ if (Q.sa_strength) {
 }
 !}
 
-= Paramilitaries
+= Organizations
 
-{!<span class="tooltip-text" title="The Reichsbanner Schwarz-Rot-Gold is a popular organization for defending democracy, mostly affiliated with the SPD.">Reichsbanner</span>!} Strength: [+ rb_strength_2 +] thousand
+Most parties have associated or allied organizations, be that newspapers, think tanks or even paramilitaries.
 
-Reichsbanner Militarization: [+ rb_militancy : militancy +]
+{!<span class="tooltip-text" title="These organizations advocate socialism and workers' emancipation. They are generally aligned with us and other socialist groups.">Socialist Organizations</span>!} Strength: [+ rga_org_2 +] thousand
 
-{!<span class="tooltip-text" title="The RFB (Rotfrontkämpferbund) is a communist group associated with the KPD.">RFB</span>!} Strength: [+ rfb_strength_2 +] thousand
+Socialist outreach: [+ rga_org_militancy : militancy +]
 
-RFB Militarization: [+ rfb_militancy : militancy +]
+{!<span class="tooltip-text" title="These radical organizations advocate social change and revolution, often through violent means. They are sympathetic to the general far left and some of the communists in our party.">Far Left Organizations</span>!} Strength: [+ far_left_org_strength_2 +] thousand
 
-{!<span class="tooltip-text" title="The Stahlhelm is a right-wing organization of war veterans associated with the DNVP.">Stahlhelm</span>!} Strength: [+ sh_strength_2 +] thousand
+Far-Left outreach: [+ far_left_org_militancy : militancy +]
 
-Stahlhelm Militarization: [+ sh_militancy : militancy +]
+{!<span class="tooltip-text" title="These organizations can be considered the DoR's establishment. They are generally loyal to the right-wing parties.">Conservative Organizations</span>!} Strength: [+ conservative_media_strength_2 +] thousand
 
-{!<span class="tooltip-text" title="The SA (Sturmabteilung) is the Nazi paramilitary.">SA</span>!} Strength: [+ sa_strength_2 +] thousand
+Conservative outreach: [+ conservative_org_militancy : militancy +]
 
-SA Militarization: [+ sa_militancy : militancy +]
+{!<span class="tooltip-text" title="Right now, the far-right organizations are practically irrelevant, though we should probably keep an eye on them.">Far Right Media</span>!} Strength: [+ far_right_org_strength_2 +] thousand
+
+Far-Right outreach: [+ far_right_org_militancy : militancy +]
 
 = Official military/paramilitaries
 
-Reichswehr: [+ reichswehr_strength +] thousand troops.
+Military: [+ reichswehr_strength +] thousand troops.
 
-Reichswehr Loyalty: [+ reichswehr_loyalty : loyalty +]
+Military Loyalty: [+ reichswehr_loyalty : loyalty +]
 
-Prussian police: [+ prussian_police_strength +] thousand members.
+Regional militia: [+ prussian_police_strength +] thousand members.
 
-Prussian police loyalty: [+ prussian_police_loyalty : loyalty +]
+Regional militia loyalty: [+ prussian_police_loyalty : loyalty +]
 
 [? if spd_in_government : Interior police loyalty: [+ interior_police_loyalty : loyalty +] ?]
 
@@ -158,21 +161,21 @@ Q.socialism_disp = Math.round(Q.socialism);
 
 (if the election were to be held now):
 
-SPD: [+ spd_votes +]%
+RGA: [+ rga_votes +]%
 
 [? if sapd_formed: SAPD: [+ sapd_votes +]% ?]
 
-Z + BVP: [+ z_votes +]%
+PPR: [+ progressive_votes +]%
 
-KPD: [+ kpd_votes +]%
+Far Left: [+ farleft_votes +]%
 
-[? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ ddp_votes +]%
+[? if not centerleft_name: DDP?][? if centerleft_name != 0 : [+ centerleft_name +]?]: [+ centerleft_votes +]%
 
-DVP: [+ dvp_votes +]%
+PLP: [+ proglib_votes +]%
 
-DNVP: [+ dnvp_votes +]%
+CPR: [+ conservative_votes +]%
 
-NSDAP: [+ nsdap_votes +]%
+Far Right: [+ farright_votes +]%
 
 Others: [+ other_votes +]%
 
