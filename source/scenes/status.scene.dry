@@ -20,7 +20,7 @@ if (Q.economic_growth) {
 
 Resources available: [+ resources +]
 
-SPD position: [? if spd_toleration : toleration ?][? if spd_in_government : in government - ?][? if spd_toleration == 0 and spd_in_government == 0 and spd_caretaker == 0 : opposition ?][? if spd_caretaker : caretaker government ?]
+RGA position: [? if spd_toleration : toleration ?][? if spd_in_government : in government - ?][? if spd_toleration == 0 and spd_in_government == 0 and spd_caretaker == 0 : opposition ?][? if spd_caretaker : caretaker government ?]
 [? if in_weimar_coalition and spd_in_government: Weimar Coalition ?][? if in_grand_coalition and spd_in_government: Grand Coalition ?][? if in_popular_front and spd_in_government: Popular Front ?][? if in_left_front and spd_in_government: Left Front ?][? if in_spd_majority and spd_in_government: SPD majority ?][? if in_minority_government and spd_in_government: minority government ?][? if in_emergency_government and spd_in_government: emergency government ?]
 
 [? if spd_in_government and not in_spd_majority and not in_left_front : Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
@@ -33,9 +33,9 @@ Internal dissent: [+ dissent_percent : dissent +]
 
 President: [+ president +]
 
-Chancellor: [+ chancellor +] ([+ chancellor_party +])
+Speaker: [+ chancellor +] ([+ chancellor_party +])
 
-Reichstag composition:
+Parliament composition:
 
 # 1928: 30, 1930: 25, 1932: 22
 {!<span class="tooltip-text" title="Red Grits Alliance">RGA</span>!}: [+ rga_r +]%
@@ -45,7 +45,7 @@ Reichstag composition:
 # 1928: 10, 1930: 13
 {!<span class="tooltip-text" title="Various far-lefts">Far Left</span>!}: [+ farleft_r +]%
 # 1928: 5, 1930: 4 (as DstP)
-{!<span class="tooltip-text" title="Various center_lefts">!}[? if not centerleft_name: DDP?][? if centerleft_name != 0 : [+ centerleft_name +]?]{!</span>!}: [+ centerleft_r +]%
+{!<span class="tooltip-text" title="Various center-lefts">!}[? if not centerleft_name: DDP?][? if centerleft_name != 0 : [+ centerleft_name +]?]{!</span>!}: [+ centerleft_r +]%
 # 1928: 9, 1930: 5
 {!<span class="tooltip-text" title="Progressive-Liberal Party of Reddit">PLP</span>!}: [+ proglib_r +]%
 # 1928: 14, 1930: 7
@@ -76,17 +76,17 @@ Economic growth: [+ economic_growth_2 +]%
 = Inter-party Relations
 
 
-{!<span class="tooltip-text" title="Progressive Party of Reddit">PPR</span>!}: [+ progressive_relation : relationships +]
+{!<span class="tooltip-text" title="Progressive Party of Reddit"><span style="color: #ea2cdd;">**PPR**</span></span>!}: [+ progressive_relation : relationships +]
 
-{!<span class="tooltip-text" title="Various center lefts">!}[? if not centerleft_name: DDP?][? if centerleft_name != 0 : [+ centerleft_name +]?]{!</span>!}: [+ centerleft_relation : relationships +]
+{!<span class="tooltip-text" title="Various center lefts"><span style="color: #bf353a;">**Center Left**</span></span>!}: [+ centerleft_relation : relationships +]
 
-{!<span class="tooltip-text" title="Progressive-Liberal Party">PLP</span>!}: [+ proglib_relation : relationships +]
+{!<span class="tooltip-text" title="Progressive-Liberal Party"><span style="color: #fcfa88;">**PLP**</span></span>!}: [+ proglib_relation : relationships +]
 
-{!<span class="tooltip-text" title="Various far lefts">Far Left</span>!}: [+ sl_relation : relationships +]
+{!<span class="tooltip-text" title="Various far lefts"><span style="color: #700000;">**Far Left**</span></span>!}: [+ sl_relation : relationships +]
 
-{!<span class="tooltip-text" title="Conservative Party of Reddit">CPR</span>!}: [+ conservative_relation : relationships +]
+{!<span class="tooltip-text" title="Conservative Party of Reddit"><span style="color: #1345b1;">**CPR**</span></span>!}: [+ conservative_relation : relationships +]
 
-{!<span class="tooltip-text" title="Various far rights">Far Right</span>!}: [+ farright_relation : relationships +]
+{!<span class="tooltip-text" title="Various far rights"><span style="color: #413a56;">**Far Right**</span></span>!}: [+ farright_relation : relationships +]
 
 = Internal Factions of the RGA
 
@@ -94,7 +94,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="The Marxists are not as radical as the communists, but they too see socialism through a Marxist lense. They are represented by the Workers' Caucus.">Marxist</span>!} strength: [+ marxist_strength : strength +], dissent: [+ marxist_dissent : dissent +]
 
-{!<span class="tooltip-text" title="The Anarchists and Libertarians seek to achieve a stateless society in the DoR. Uniquely, they support participation in elections.">Anarchist</span>!} strength: [+ anarchist_strength : strength +], dissent: [+ anarchist_dissent : dissent +]
+{!<span class="tooltip-text" title="The Anarchists and Libertarians seek to achieve a stateless society in the DoR. Uniquely, they support participation in elections. They are represented by the Liberty for All Caucus.">Anarchist</span>!} strength: [+ anarchist_strength : strength +], dissent: [+ anarchist_dissent : dissent +]
 
 {!<span class="tooltip-text" title="The Pan Socialists are the glue of the party. They seek unity within the RGA, as well as cooperation with other left-wing parties.">Pan Socialist</span>!} strength: [+ pansocialist_strength : strength +], dissent: [+ pansocialist_dissent : dissent +]
 
@@ -104,17 +104,17 @@ Economic growth: [+ economic_growth_2 +]%
 
 @paramilitaries
 on-arrival: {!
-if (Q.rb_strength) {
-    Q.rb_strength_2 = Q.rb_strength.toFixed(1);
+if (Q.rga_org_strength) {
+    Q.rga_org_strength_2 = Q.rga_org_strength.toFixed(1);
 }
-if (Q.rfb_strength) {
-    Q.rfb_strength_2 = Q.rfb_strength.toFixed(1);
+if (Q.far_left_org_strength) {
+    Q.far_left_org_strength_2 = Q.far_left_org_strength.toFixed(1);
 }
-if (Q.sh_strength) {
-    Q.sh_strength_2 = Q.sh_strength.toFixed(1);
+if (Q.conservative_org_strength) {
+    Q.conservative_org_strength_2 = Q.conservative_org_strength.toFixed(1);
 }
-if (Q.sa_strength) {
-    Q.sa_strength_2 = Q.sa_strength.toFixed(1);
+if (Q.far_right_org_strength) {
+    Q.far_right_org_strength_2 = Q.far_right_org_strength.toFixed(1);
 }
 !}
 
@@ -122,7 +122,7 @@ if (Q.sa_strength) {
 
 Most parties have associated or allied organizations, be that newspapers, think tanks or even paramilitaries.
 
-{!<span class="tooltip-text" title="These organizations advocate socialism and workers' emancipation. They are generally aligned with us and other socialist groups.">Socialist Organizations</span>!} Strength: [+ rga_org_2 +] thousand
+{!<span class="tooltip-text" title="These organizations advocate socialism and workers' emancipation. They are generally aligned with us and other socialist groups.">Socialist Organizations</span>!} Strength: [+ rga_org_strength_2 +] thousand
 
 Socialist outreach: [+ rga_org_militancy : militancy +]
 
@@ -130,11 +130,11 @@ Socialist outreach: [+ rga_org_militancy : militancy +]
 
 Far-Left outreach: [+ far_left_org_militancy : militancy +]
 
-{!<span class="tooltip-text" title="These organizations can be considered the DoR's establishment. They are generally loyal to the right-wing parties.">Conservative Organizations</span>!} Strength: [+ conservative_media_strength_2 +] thousand
+{!<span class="tooltip-text" title="These organizations can be considered the DoR's establishment. They are generally loyal to the right-wing parties.">Conservative Organizations</span>!} Strength: [+ conservative_org_strength_2 +] thousand
 
 Conservative outreach: [+ conservative_org_militancy : militancy +]
 
-{!<span class="tooltip-text" title="Right now, the far-right organizations are practically irrelevant, though we should probably keep an eye on them.">Far Right Media</span>!} Strength: [+ far_right_org_strength_2 +] thousand
+{!<span class="tooltip-text" title="Right now, the far-right organizations are practically irrelevant, though we should probably keep an eye on them.">Far Right Organizations</span>!} Strength: [+ far_right_org_strength_2 +] thousand
 
 Far-Right outreach: [+ far_right_org_militancy : militancy +]
 
