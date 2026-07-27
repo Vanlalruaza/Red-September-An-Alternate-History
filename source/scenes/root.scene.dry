@@ -48,17 +48,17 @@ Q.dissent_percent = 5;
 // factions
 Q.factions = ['communist', 'marxist', 'anarchist', 'pansocialist', 'reformist', 'radlib'];
 // should this be normalized to 100%?
-Q.communist_strength = 5;
-Q.communist_dissent = 5;
-Q.marxist_strength = 10;
+Q.communist_strength = 10;
+Q.communist_dissent = 10;
+Q.marxist_strength = 15;
 Q.marxist_dissent = 0;
 Q.anarchist_strength = 10;
 Q.anarchist_dissent = 10;
 Q.pansocialist_strength = 30;
 Q.pansocialist_dissent = 0;
-Q.reformist_strength = 15;
+Q.reformist_strength = 20;
 Q.reformist_dissent = 0;
-Q.radlib_strength = 15;
+Q.radlib_strength = 10;
 Q.radlib_dissent = 0;
 
 // secret events...
@@ -133,16 +133,16 @@ Q.prussian_government = "SPD";
 // Number of members in 1928 (in thousands)
 // Reichsbanner, stahlhelm, SA, rotfrontkämpferbund
 Q.rga_org_strength = 2000;
-Q.rga_org_militancy = 0.01;
+Q.rga_org_militancy = 0.5;
 Q.rga_org_banned = 0;
 Q.conservative_org_strength = 500;
 Q.conservative_org_militancy = 0.5;
 Q.conservative_org_banned = 0;
 Q.far_right_org_strength = 100;
-Q.far_right_org_militancy = 0.5;
+Q.far_right_org_militancy = 0.1;
 Q.far_right_org_banned = 0;
 Q.far_left_org_strength = 130;
-Q.far_left_org_militancy = 0.5;
+Q.far_left_org_militancy = 0.1;
 Q.far_left_org_banned = 0;
 
 Q.interior_police_strength = 20;
