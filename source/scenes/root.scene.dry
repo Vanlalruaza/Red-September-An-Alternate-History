@@ -626,7 +626,7 @@ go-to: 1928_main
 
 @1928_main
 set-bg: img/dor_map.jpg
-audio: shuffle out/html/music/main/ L'Internationale_.mp3 out/html/music/main/Socialism_is_Love.mp3
+audio: shuffle music/main/ L'Internationale_.mp3 music/main/Socialism_is_Love.mp3
 new-page: true
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
