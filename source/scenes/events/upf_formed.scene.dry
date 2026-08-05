@@ -1,6 +1,6 @@
 title: The United People's Front
 subtitle: The moderate left is unifying into the UPF.
-view-if: year = 9 and month = 1
+view-if: year = 9 and month = 20 and peoples_pact_formed = 1
 max-visits: 1
 on_arrival: centerleft_name = "UPF"; intellectuals_centerleft += 5; intellectuals_centerleft += 3; reformist_strength -= 10; centerleft_relation -= 20
 tags: event
