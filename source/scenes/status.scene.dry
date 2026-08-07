@@ -82,7 +82,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="Progressive-Liberal Party"><span style="color: #fcfa88;">**PLP**</span></span>!}: [+ proglib_relation : relationships +]
 
-{!<span class="tooltip-text" title="Various far lefts"><span style="color: #700000;">**Far Left**</span></span>!}: [+ sl_relation : relationships +]
+{!<span class="tooltip-text" title="Various far lefts"><span style="color: #700000;">**Far Left**</span></span>!}: [+ farleft_relation : relationships +]
 
 {!<span class="tooltip-text" title="Conservative Party of Reddit"><span style="color: #1345b1;">**CPR**</span></span>!}: [+ conservative_relation : relationships +]
 
