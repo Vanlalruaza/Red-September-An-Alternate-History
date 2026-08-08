@@ -594,17 +594,21 @@ For more information on the politics and government of the <span style="color: #
 - @1928_historical: Begin (historical mode)
 
 @1928_easy
-subtitle: **WIP!!! Select normal difficulty for a working game!**
+choose-if: alternate_difficulties = 1
+unavailable-subtitle: *Currently not implemented.*
 on-arrival: difficulty = -1; resources = 4; dues = 3; rb_strength = 2500; kpd_relation = 29; z_relation = 54; dvp_relation = 49; budget = 5;
 go-to: 1928_main
 
 @1928_hard
-subtitle: **WIP!!! Select normal difficulty for a working game!**
+choose-if: alternate_difficulties = 1
+unavailable-subtitle: *Currently not implemented.*
 on-arrival: difficulty = 1; resources = 0; dues = 1; rb_strength = 1000; reformist_dissent = 25; left_dissent = 30; labor_dissent = 25; center_dissent = 25; z_relation = 41; kpd_relation = 16; dvp_relation = 31; budget = 3;
 go-to: 1928_main
 
 @1928_historical
-subtitle: Saving, loading, and polls will be disabled. [? if not achievement_game_completed: Not recommended for a first playthrough. ?] **WIP!!! Select normal difficulty for a working game!**
+choose-if: alternate_difficulties = 1
+unavailable-subtitle: *Currently not implemented.*
+subtitle: Saving, loading, and polls will be disabled. [? if not achievement_game_completed: Not recommended for a first playthrough. ?]
 on-arrival: {!
 Q.difficulty = 2;
 Q.historical_mode = 1;
@@ -626,7 +630,7 @@ go-to: 1928_main
 
 @1928_main
 set-bg: img/dor_map.jpg
-audio: shuffle music/main/ L'Internationale_.mp3 music/main/Socialism_is_Love.mp3
+audio: shuffle music/main/Internationale_.mp3 music/main/Socialism_is_Love.mp3
 new-page: true
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
