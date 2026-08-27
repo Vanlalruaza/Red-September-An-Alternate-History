@@ -112,6 +112,7 @@ Q.farright_relation = 0;
 Q.farleft_leader = "Blobii";
 // alternative is the Conciliators as party leader
 Q.farleft_party_leader = "Blobii";
+Q.rga_party_secretary = "Yes Tuesday";
 Q.progressive_leader = "Woodlands";
 // party leader - can be Ludwig Kaas, Joseph Joos, or Adam Stegerwald after the 1928 December conference. Joos will be most friendly to the SPD.
 Q.progressive_party_leader = "Woodlands";
