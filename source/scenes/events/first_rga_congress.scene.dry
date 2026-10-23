@@ -102,7 +102,7 @@ The final question is our attitude towards the other parties.
 @revolutionary_left
 choose-if: revolution = 1 or kautsky = 1 and reformist_socialism = 0 and progressivism = 0
 subtitle: This will strengthen the Communists and Libertarians. This will slightly strengthen the Marxists. This will anger the Reformists and Radical Liberals. This will enable the integration of the far left.
-unavailalbe-subtitle: We chose to commit ourselves to the democratic system.
+unavailable-subtitle: We chose to commit ourselves to the democratic system.
 on-arrival: communist_strength += 10; libertarian_strength += 10; marxist_strength += 5; reformist_dissent += 10; radlib_dissent += 10; revolutionary_left = 1
 
 We will unite the left of the DoR for the final struggle!
