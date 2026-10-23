@@ -1,0 +1,137 @@
+title: The First Party Congress
+subtitle: It is time to set our course for the future.
+view if: year = 9 and month = 1
+new-page: true
+max-visits: 1
+on-arrival: revolutionary_socialism = 0; broad_socialism = 0; reformist_socialism = 0; progressivism = 0; revolution = 0; kautsky = 0; reform = 0; revolutionary_left = 0; broad_left = 0; pragmatic = 0
+tags: event
+
+= The First Party Congress
+
+The day has come. Socialists from all across the DoR have convened to decide the path our party will take. Various factions will now fiercely fight over the RGA's future, hoping to implement their own vision for the party.
+
+Party Secretary [+ rga_party_secretary +] has been tasked to lead the congress.
+
+**This congress will remarkably shape your path. While ideological realignments may still be possible later on, it is advised you make your decision here and now.**
+
+The first question to answer is the socialist character of our party, and how we define it. Obviously, we are all socialists, but we all interpret socialism differently.
+
+- @revolutionary_socialism: Our socialism shall be a radical and revolutionary one. Communism is our end goal.
+- @broad_socialism: Socialists of all stripes are welcome in our party!
+- @reformist_socialism: Our progression towards socialism shall be a gradual and ethical one.
+- @progressivism: We should remain rather vague on socialism. We will be a broad progressive force of the DoR!
+
+@revolutionary_socialism
+subtitle: This will strengthen the Marxists, the Libertarians and the Communists. This will anger the Reformists and Radical Liberals.
+on-arrival: communist_strength += 10; marxist_strength += 10; anarchist_strength += 10; reformist_dissent += 10; radlib_dissent += 10; revolutionary_socialism = 1
+
+Down with Lassalle and Bernstein. Long live the revolution!
+
+Already, reformists and radical liberals are voicing their dissent.
+
+@broad_socialism
+subtitle: This will strengthen the Pan-Socialists. This will slightly strengthen all other factions.
+on-arrival: pansocialist_strength += 10; marxist_strength += 5; communist_strength += 5; anarchist_strength += 5; reformist_strength += 5; radlib_strength += 5; broad_socialism = 1
+
+We will embrace leftist unity! March on in the workers' united front!
+
+All factions are satisfied with this.
+
+@reformist_socialism
+subtitle: This will strengthen the Reformists. This will slightly strengthen the Radical Liberals. This will anger the Communists, Marxists and Libertarians.
+on-arrival: reformist_strength += 10; radlib_strength += 5; communist_dissent += 10; marxist_dissent += 5; anarchist_dissent += 10; reformist_socialism = 1
+
+Bernstein was right, in the current state of capitalism, radical change is impossible. 
+
+The left of the party is obviously upset about this.
+
+@progressivism
+subtitle: This will strengthen the Radical Liberals. This will anger all other factions.
+on-arrival: radlib_strength += 10; reformist_dissent += 5; pansocialist_dissent += 10; marxist_dissent += 10; anarchist_dissent += 10; communist_strength += 10; progressivism = 1
+
+Long live the spirit of 1789 and 1848! Long live the republic! Long live democracy!
+
+Practically all factions but the Radical Liberals are upset at this. At this point, why don't we already {!<span class="tooltip-text" title="Foreshadowing is a narrative device in which suggestions or warnings about events to come are dropped or planted.">merge with the <span style="color: #ea2cdd;">**Progressives**</span></span>!}?
+
+@reform_or_revolution
+new-page: false
+
+The next question is our relation with the state, and whether we should overthrow it or not.
+
+- @revolution: The only way to achieve socialism is the violent overthrow of the bourgeois state through a revolution of the masses.
+- @kautsky: We should adopt a centrist stance for the sake of party unity.
+- @reform: The only way to realize our goals is through gradual reforms in the existing system.
+
+@revolution
+choose-if: revolutionary_socialism = 1 or broad_socialism = 1
+unavailable-subtitle: *We chose to embrace reformism.*
+subtitle: This will strengthen the Communists. This will slightly strengthen the Libertarians and Marxists. This will anger the Reformists and Radical Liberals.
+on-arrival: communist_strength += 10; marxist_strength += 5; anarchist_strength += 5; reformist_dissent += 10; radlib_dissent += 10; revolution = 1
+
+Our rejection of the current system has been written into our constitution. Revolution awaits!
+
+The Reformists and Radical Liberals are disgusted, a split is to be expected. The spirit of pan-socialism we previously embraced seems to have vanished.
+
+@kautsky
+subtitle: This will strengthen the Pan-Socialists. This will slightly strengthen all other factions.
+on-arrival: pansocialist_strength += 10; communist_strength += 5; marxist_strength += 5; anarchist_strength += 5; reformist_strength += 5; radlib_strength += 5; kautsky = 1
+
+We do not take a clear stance on revolution and reform, for the sake of unity. Pan-Socialism lives on!
+
+While both left and right are not entirely happy about this outcome, they are willing to tolerate it.
+
+@reform
+choose-if: reformist_socialism = 1 or progressivism = 1 or broad_socialism = 1
+unavailable-subtitle: *We chose to embrace revolution.*
+subtitle: This will strengthen the Reformists and Radical Liberals. This will anger the Communists, Marxists and Libertarians.
+on-arrival: reformist_strength += 10; radlib_strength += 10; communist_dissent += 10; marxist_dissent += 5; libertarian_dissent += 10; reform = 1
+
+We will willingly become part of the DoR's democratic pluralism. We're gonna vote, vote, vote, its our moment, you know together we're voting, we're gonna be, gonna be voting!
+
+The left of the party, especially the Communist faction, is disgusted, a split is to be expected. The spirit of pan-socialism we previously embraced seems to have vanished.
+
+@other_parties
+new-page: false
+
+The final question is our attitude towards the other parties.
+
+- @revolutionary_left: We will only cooperate with the revolutionary left!
+- @broad_left: We will cooperate with the whole left, both reformists and revolutionaries!
+- @pragmatic: We should aim to stay pragmatic. Embrace cooperation with all democratic parties to our right!
+
+@revolutionary_left
+choose-if: revolution = 1 or kautsky = 1 and reformist_socialism = 0 and progressivism = 0
+subtitle: This will strengthen the Communists and Libertarians. This will slightly strengthen the Marxists. This will anger the Reformists and Radical Liberals. This will enable the integration of the far left.
+unavailalbe-subtitle: We chose to commit ourselves to the democratic system.
+on-arrival: communist_strength += 10; libertarian_strength += 10; marxist_strength += 5; reformist_dissent += 10; radlib_dissent += 10; revolutionary_left = 1
+
+We will unite the left of the DoR for the final struggle!
+
+Those Reformists and Radical Liberals who haven't stormed out of the congress yet threaten to split from the party. 
+
+**If we play our cards right, we will be able to integrate the far left into our party!**
+
+@broad_left
+choose-if: kautsky = 1
+subtitle: This will strengthen the Pan-Socialists. This will slightly strengthen all other factions. This will slightly anger the Communists and Reformists.
+unavailable-subtitle: We have radicalized the party too much into either direction.
+on-arrival: pansocialist_strength += 10; communist_strength += 5; libertarian_strength += 5; marxist_strength += 5; reformist_strength += 5; radlib_strength += 5; communist_dissent += 5; reformist_dissent += 5; broad_left = 1
+
+March on in the workers' united front!
+
+While the right and far left both do voice some concerns, this is acceptable to all factions.
+
+@pragmatic
+choose-if: kautsky = 1 or reform = 1 and revolutionary_socialism = 0
+subtitle: This will strengthen the Reformists and Radical Liberals. This will anger the Communists, Marxists and Libertarians. This will enable the integration of the center left and maybe even unification with the Progressives.
+unavailable-subtitle: We chose to commit ourselves to the revolution.
+on-arrival: reformist_strength += 10; radlib_strength += 10; communist_dissent += 10; marxist_dissent += 10; libertarian_strength += 10; pragmatic = 1
+
+@end_of_congress
+new-page: false
+
+Our congress has come to an end. The results will become clear in a few days.
+
+In spite of all quarrels and factionalisms, all participants put aside their differences for one last time and gathered to sing our anthem, the Internationale.
+
+**The faction which has gathered the most strength will consolidate control over the party.**
