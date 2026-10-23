@@ -8,7 +8,7 @@ tags: event
 
 = The First Party Congress
 
-The day has come. Socialists from all across the DoR have convened to decide the path our party will take. Various factions will now fiercely fight over the RGA's future, hoping to implement their own vision for the party.
+The day has come. Socialists from all across the <span style="color: #4972af;">**Democracy of Reddit**</span> have convened to decide the path our party will take. Various factions will now fiercely fight over the <span style="color: #aa0f24;">**RGA**</span>'s future, hoping to implement their own vision for the party.
 
 Party Secretary [+ rga_party_secretary +] has been tasked to lead the congress.
 
@@ -22,36 +22,40 @@ The first question to answer is the socialist character of our party, and how we
 - @progressivism: We should remain rather vague on socialism. We will be a broad progressive force of the DoR!
 
 @revolutionary_socialism
-subtitle: This will strengthen the Marxists, the Libertarians and the Communists. This will anger the Reformists and Radical Liberals.
+subtitle: This will strengthen the <span style="color: #a3166b;">**Marxists**</span>, the <span style="color: #330000;">**Libertarians**</span> and the <span style="color: #b20002;">**Communists**</span>. This will anger the <span style="color: #ef5b5d;">**Reformists**</span> and <span style="color: #c564ef;">**Radical Liberals**</span>.
 on-arrival: communist_strength += 10; marxist_strength += 10; anarchist_strength += 10; reformist_dissent += 10; radlib_dissent += 10; revolutionary_socialism = 1
+go-to: @reform_or_revolution
 
 Down with Lassalle and Bernstein. Long live the revolution!
 
-Already, reformists and radical liberals are voicing their dissent.
+Already, <span style="color: #ef5b5d;">**Reformists**</span> and <span style="color: #c564ef;">**Radical Liberals**</span> are voicing their dissent.
 
 @broad_socialism
-subtitle: This will strengthen the Pan-Socialists. This will slightly strengthen all other factions.
+subtitle: This will strengthen the <span style="color: #e0000e;">**Pan-Socialists**</span>. This will slightly strengthen all other factions.
 on-arrival: pansocialist_strength += 10; marxist_strength += 5; communist_strength += 5; anarchist_strength += 5; reformist_strength += 5; radlib_strength += 5; broad_socialism = 1
+go-to: @reform_or_revolution
 
 We will embrace leftist unity! March on in the workers' united front!
 
 All factions are satisfied with this.
 
 @reformist_socialism
-subtitle: This will strengthen the Reformists. This will slightly strengthen the Radical Liberals. This will anger the Communists, Marxists and Libertarians.
+subtitle: This will strengthen the <span style="color: #ef5b5d;">**Reformists**</span>. This will slightly strengthen the <span style="color: #c564ef;">**Radical Liberals**</span>. This will anger the <span style="color: #b20002;">**Communists**</span>, <span style="color: #a3166b;">**Marxists**</span> and <span style="color: #330000;">**Libertarians**</span>.
 on-arrival: reformist_strength += 10; radlib_strength += 5; communist_dissent += 10; marxist_dissent += 5; anarchist_dissent += 10; reformist_socialism = 1
+go-to: @reform_or_revolution
 
 Bernstein was right, in the current state of capitalism, radical change is impossible. 
 
 The left of the party is obviously upset about this.
 
 @progressivism
-subtitle: This will strengthen the Radical Liberals. This will anger all other factions.
+subtitle: This will strengthen the <span style="color: #c564ef;">**Radical Liberals**</span>. This will anger all other factions.
 on-arrival: radlib_strength += 10; reformist_dissent += 5; pansocialist_dissent += 10; marxist_dissent += 10; anarchist_dissent += 10; communist_strength += 10; progressivism = 1
+go-to: @reform_or_revolution
 
 Long live the spirit of 1789 and 1848! Long live the republic! Long live democracy!
 
-Practically all factions but the Radical Liberals are upset at this. At this point, why don't we already {!<span class="tooltip-text" title="Foreshadowing is a narrative device in which suggestions or warnings about events to come are dropped or planted.">merge with the <span style="color: #ea2cdd;">**Progressives**</span></span>!}?
+Practically all factions but the <span style="color: #c564ef;">**Radical Liberals**</span> are upset at this. At this point, why don't we already {!<span class="tooltip-text" title="Foreshadowing is a narrative device in which suggestions or warnings about events to come are dropped or planted.">merge with the <span style="color: #ea2cdd;">**Progressives**</span></span>!}?
 
 @reform_or_revolution
 new-page: false
@@ -65,16 +69,18 @@ The next question is our relation with the state, and whether we should overthro
 @revolution
 choose-if: revolutionary_socialism = 1 or broad_socialism = 1
 unavailable-subtitle: *We chose to embrace reformism.*
-subtitle: This will strengthen the Communists. This will slightly strengthen the Libertarians and Marxists. This will anger the Reformists and Radical Liberals.
+subtitle: This will strengthen the <span style="color: #b20002;">**Communists**</span>. This will slightly strengthen the <span style="color: #330000;">**Libertarians**</span> and <span style="color: #a3166b;">**Marxists**</span>. This will anger the <span style="color: #ef5b5d;">**Reformists**</span> and <span style="color: #c564ef;">**Radical Liberals**</span>.
 on-arrival: communist_strength += 10; marxist_strength += 5; anarchist_strength += 5; reformist_dissent += 10; radlib_dissent += 10; revolution = 1
+go-to: @other_parties
 
 Our rejection of the current system has been written into our constitution. Revolution awaits!
 
 The Reformists and Radical Liberals are disgusted, a split is to be expected. The spirit of pan-socialism we previously embraced seems to have vanished.
 
 @kautsky
-subtitle: This will strengthen the Pan-Socialists. This will slightly strengthen all other factions.
+subtitle: This will strengthen the <span style="color: #e0000e;">**Pan-Socialists**</span>. This will slightly strengthen all other factions.
 on-arrival: pansocialist_strength += 10; communist_strength += 5; marxist_strength += 5; anarchist_strength += 5; reformist_strength += 5; radlib_strength += 5; kautsky = 1
+go-to: @other_parties
 
 We do not take a clear stance on revolution and reform, for the sake of unity. Pan-Socialism lives on!
 
@@ -83,8 +89,9 @@ While both left and right are not entirely happy about this outcome, they are wi
 @reform
 choose-if: reformist_socialism = 1 or progressivism = 1 or broad_socialism = 1
 unavailable-subtitle: *We chose to embrace revolution.*
-subtitle: This will strengthen the Reformists and Radical Liberals. This will anger the Communists, Marxists and Libertarians.
+subtitle: This will strengthen the <span style="color: #ef5b5d;">**Reformists**</span> and <span style="color: #c564ef;">**Radical Liberals**</span>. This will anger the <span style="color: #b20002;">**Communists**</span>, <span style="color: #a3166b;">**Marxists**</span> and <span style="color: #330000;">**Libertarians**</span>.
 on-arrival: reformist_strength += 10; radlib_strength += 10; communist_dissent += 10; marxist_dissent += 5; libertarian_dissent += 10; reform = 1
+go-to: @other_parties
 
 We will willingly become part of the DoR's democratic pluralism. We're gonna vote, vote, vote, its our moment, you know together we're voting, we're gonna be, gonna be voting!
 
@@ -101,19 +108,19 @@ The final question is our attitude towards the other parties.
 
 @revolutionary_left
 choose-if: revolution = 1 or kautsky = 1 and reformist_socialism = 0 and progressivism = 0
-subtitle: This will strengthen the Communists and Libertarians. This will slightly strengthen the Marxists. This will anger the Reformists and Radical Liberals. This will enable the integration of the far left.
+subtitle: This will strengthen the <span style="color: #b20002;">**Communists**</span> and <span style="color: #330000;">**Libertarians**</span>. This will slightly strengthen the <span style="color: #a3166b;">**Marxists**</span>. This will anger the <span style="color: #ef5b5d;">**Reformists**</span> and <span style="color: #c564ef;">**Radical Liberals**</span>. This will enable the integration of the <span style="color: #700000;">**far left**</span>.
 unavailable-subtitle: We chose to commit ourselves to the democratic system.
 on-arrival: communist_strength += 10; libertarian_strength += 10; marxist_strength += 5; reformist_dissent += 10; radlib_dissent += 10; revolutionary_left = 1
 
 We will unite the left of the DoR for the final struggle!
 
-Those Reformists and Radical Liberals who haven't stormed out of the congress yet threaten to split from the party. 
+Those <span style="color: #ef5b5d;">**Reformists**</span> and <span style="color: #c564ef;">**Radical Liberals**</span> who haven't stormed out of the congress yet threaten to split from the party. 
 
-**If we play our cards right, we will be able to integrate the far left into our party!**
+**If we play our cards right, we will be able to integrate the <span style="color: #700000;">far left</span> into our party!**
 
 @broad_left
 choose-if: kautsky = 1
-subtitle: This will strengthen the Pan-Socialists. This will slightly strengthen all other factions. This will slightly anger the Communists and Reformists.
+subtitle: This will strengthen the <span style="color: #e0000e;">**Pan-Socialists**</span>. This will slightly strengthen all other factions. This will slightly anger the <span style="color: #b20002;">**Communists**</span> and <span style="color: #ef5b5d;">**Reformists**</span>.
 unavailable-subtitle: We have radicalized the party too much into either direction.
 on-arrival: pansocialist_strength += 10; communist_strength += 5; libertarian_strength += 5; marxist_strength += 5; reformist_strength += 5; radlib_strength += 5; communist_dissent += 5; reformist_dissent += 5; broad_left = 1
 
@@ -123,15 +130,21 @@ While the right and far left both do voice some concerns, this is acceptable to 
 
 @pragmatic
 choose-if: kautsky = 1 or reform = 1 and revolutionary_socialism = 0
-subtitle: This will strengthen the Reformists and Radical Liberals. This will anger the Communists, Marxists and Libertarians. This will enable the integration of the center left and maybe even unification with the Progressives.
+subtitle: This will strengthen the <span style="color: #ef5b5d;">**Reformists**</span> and <span style="color: #c564ef;">**Radical Liberals**</span>. This will anger the <span style="color: #b20002;">**Communists**</span>, <span style="color: #a3166b;">**Marxists**</span> and <span style="color: #330000;">**Libertarians**</span>. This will enable the integration of the <span style="color: #bf353a;">**center left**</span> and maybe even unification with the <span style="color: #ea2cdd;">**Progressive Party**</span>.
 unavailable-subtitle: We chose to commit ourselves to the revolution.
 on-arrival: reformist_strength += 10; radlib_strength += 10; communist_dissent += 10; marxist_dissent += 10; libertarian_strength += 10; pragmatic = 1
+
+If we want to produce real long lasting change, we have to cooperate with the political right. This is the final straw for most of the left of our party.
+
+**If we play our cards right, we will be able to integrate the <span style="color: #bf353a;">center left</span> into our party. If we choose a Radical Liberal route, we may even unite with the <span style="color: #ea2cdd;">Progressive Party</span>!
 
 @end_of_congress
 new-page: false
 
 Our congress has come to an end. The results will become clear in a few days.
 
-In spite of all quarrels and factionalisms, all participants put aside their differences for one last time and gathered to sing our anthem, the Internationale.
+In spite of all quarrels and factionalisms, all participants put aside their differences for one last time and gather to sing our anthem, the Internationale.
 
-**The faction which has gathered the most strength will consolidate control over the party.**
+Many leave the congress halls with mixed feelings. All are aware of the importance of this day for the future of the <span style="color: #4972af;">**Democracy of Reddit**</span>.
+
+**The faction which has gathered the most strength will consolidate control over the party. If a left faction consolidates power, we will have another power struggle to determine our path once and for all.**
