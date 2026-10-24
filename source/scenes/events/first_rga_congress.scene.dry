@@ -111,6 +111,7 @@ choose-if: revolution = 1 or kautsky = 1 and reformist_socialism = 0 and progres
 subtitle: This will strengthen the <span style="color: #b20002;">**Communists**</span> and <span style="color: #330000;">**Libertarians**</span>. This will slightly strengthen the <span style="color: #a3166b;">**Marxists**</span>. This will anger the <span style="color: #ef5b5d;">**Reformists**</span> and <span style="color: #c564ef;">**Radical Liberals**</span>. This will enable the integration of the <span style="color: #700000;">**far left**</span>.
 unavailable-subtitle: We chose to commit ourselves to the democratic system.
 on-arrival: communist_strength += 10; libertarian_strength += 10; marxist_strength += 5; reformist_dissent += 10; radlib_dissent += 10; revolutionary_left = 1
+go-to: @end_of_congress
 
 We will unite the left of the DoR for the final struggle!
 
@@ -123,6 +124,7 @@ choose-if: kautsky = 1
 subtitle: This will strengthen the <span style="color: #e0000e;">**Pan-Socialists**</span>. This will slightly strengthen all other factions. This will slightly anger the <span style="color: #b20002;">**Communists**</span> and <span style="color: #ef5b5d;">**Reformists**</span>.
 unavailable-subtitle: We have radicalized the party too much into either direction.
 on-arrival: pansocialist_strength += 10; communist_strength += 5; libertarian_strength += 5; marxist_strength += 5; reformist_strength += 5; radlib_strength += 5; communist_dissent += 5; reformist_dissent += 5; broad_left = 1
+go-to: @end_of_congress
 
 March on in the workers' united front!
 
@@ -133,6 +135,7 @@ choose-if: kautsky = 1 or reform = 1 and revolutionary_socialism = 0
 subtitle: This will strengthen the <span style="color: #ef5b5d;">**Reformists**</span> and <span style="color: #c564ef;">**Radical Liberals**</span>. This will anger the <span style="color: #b20002;">**Communists**</span>, <span style="color: #a3166b;">**Marxists**</span> and <span style="color: #330000;">**Libertarians**</span>. This will enable the integration of the <span style="color: #bf353a;">**center left**</span> and maybe even unification with the <span style="color: #ea2cdd;">**Progressive Party**</span>.
 unavailable-subtitle: We chose to commit ourselves to the revolution.
 on-arrival: reformist_strength += 10; radlib_strength += 10; communist_dissent += 10; marxist_dissent += 10; libertarian_strength += 10; pragmatic = 1
+go-to: @end_of_congress
 
 If we want to produce real long lasting change, we have to cooperate with the political right. This is the final straw for most of the left of our party.
 
